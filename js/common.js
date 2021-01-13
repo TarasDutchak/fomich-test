@@ -43,8 +43,8 @@ $(document).ready(function () {
     });
 
     var swiper1 = new Swiper('.course-slider', {
-        spaceBetween: 30,
-        slidesPerView: 4,
+        // spaceBetween: 30,
+        // slidesPerView: 4,
         centeredSlides: true,
         speed: 700,
         loop: true,
@@ -54,6 +54,16 @@ $(document).ready(function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        breakpoints: {
+            767: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            },
+            1024: {
+                spaceBetween: 30,
+                slidesPerView: 4,
+            }
+          }
     });
 
     // more or less text (how we work)
@@ -102,29 +112,40 @@ $(document).ready(function () {
 
 
     // якоря
-    $(".header_menu, .footer__lists").on("click","a", function (event) {
+    $(".header_menu, .footer__lists").on("click", "a", function (event) {
         var headerHeight = 110;
         if ($(window).width() < 1601) {
             var headerHeight = 80;
-         }
-		event.preventDefault();
-		var id  = $(this).attr('href'),
-			top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top - headerHeight}, 1500);
+        }
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({
+            scrollTop: top - headerHeight
+        }, 1500);
     });
 
     $(".mainsection__btngroup a.transparentbtn, .footer__btns a.transparentbtn").on("click", function (event) {
         var headerHeight = 110;
         if ($(window).width() < 1601) {
             var headerHeight = 80;
-         }
-		event.preventDefault();
-		var id  = $(this).attr('href'),
-			top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top - headerHeight}, 1500);
+        }
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({
+            scrollTop: top - headerHeight
+        }, 1500);
     });
-    
 
-    // 80
+
+    // mob - phone btn
+
+    $('.phone-btn').click(function(){
+        $(this).siblings('.phonesect').toggle();
+    });
+
+
+
 
 });

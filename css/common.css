@@ -1558,9 +1558,14 @@ footer.footer {
     min-height: 690px;
 }
 
+.burger-btn,
+.phone-btn {
+    display: none;
+}
 
-
-
+.genplan {
+    padding-bottom: 80px;
+}
 
 
 
