@@ -674,6 +674,134 @@
         padding-top: 30px;
     }
 
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #121316;
+        left: 0;
+        top: 0;
+    }
+
+    .mobile-menu__close {
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        outline: none;
+        background: transparent;
+        padding: 0;
+        border: none;
+        z-index: 3;
+    }
+
+    .mobile-menu__content {
+        padding: 75px 40px 40px;
+        text-align: center;
+        position: relative;
+        overflow: scroll;
+        height: 100%;
+    }
+
+    .mobile-menu__content:after {
+        content: '';
+        display: inline-block;
+        width: 500px;
+        height: 300px;
+        background: url(../img/bgmenu.png) no-repeat center top;
+        background-size: 100%;
+        opacity: .05;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .mobnav,
+    .moblang ul,
+    .mobphonenums ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobnav li {
+        margin-bottom: 20px;
+    }
+
+    .mobnav li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 22px;
+    }
+
+    .mobile-menu__content img {
+        width: 140px;
+        margin-bottom: 60px;
+    }
+
+    .moblang ul li {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+    }
+
+    .moblang ul li a {
+        text-transform: uppercase;
+        color: #67686C;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .moblang ul li.active a {
+        color: #fff;
+    }
+
+    .moblang ul li:first-child {
+        margin-right: 30px;
+    }
+
+    .moblang ul li:first-child:after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 22px;
+        background: #fff;
+        position: absolute;
+        right: -17px;
+        top: -2px;
+    }
+
+    .moblang {
+        margin: 80px 0 60px 0;
+    }
+
+    .mobphonenums li {
+        margin-bottom: 20px;
+    }
+
+    .mobphonenums li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        padding-left: 30px;
+        background: url('../img/icon-phone.svg') no-repeat left center;
+        background-size: 16px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #D4AF37;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     .whywe__sectdescr .toptext,
@@ -700,5 +828,701 @@
 }
 
 @media(max-width:991.8px) {
-    
+
+    .mainsection {
+        height: 100vh;
+        max-height: initial;
+    }
+
+    .mainsection__middlesect h1 {
+        font-size: 75px;
+        margin-bottom: 10px;
+    }
+
+    .mainsection__middlesect h1 span {
+        font-size: 35px;
+    }
+
+    .mainsection__bottomsect {
+        flex-wrap: wrap;
+    }
+
+    .mainsection__bottomsect .leftblock {
+        order: 2;
+        margin-top: 30px;
+    }
+
+    .whywe__sliderwrapp .swiper-container,
+    .whywe__sliderwrapp .slidebox {
+        height: 350px;
+    }
+
+    .whywe__sliderwrapp .swiper-container:after {
+        width: 200px;
+        height: 66px;
+    }
+
+    .whywe__sliderwrapp .swiper-button-next {
+        right: 30px;
+    }
+
+    .whywe__sliderwrapp .swiper-button-prev {
+        right: 65px;
+    }
+
+    .whywe__sliderwrapp .swiper-button-next,
+    .whywe__sliderwrapp .swiper-button-prev {
+        bottom: 18px;
+    }
+
+    .whywe__sliderwrapp .swiper-pagination.swiper-pagination-fraction {
+        bottom: 18px;
+        right: 125px;
+    }
+
+    .invest h3 {
+        max-width: 350px;
+    }
+
+    .invest__picwrap,
+    .gallery__mainpic a {
+        height: 300px;
+    }
+
+    .invest__descrtext {
+        width: 75%;
+        padding: 5px 10px 20px 5px;
+    }
+
+    .interior__topsect {
+        padding: 50px 0;
+    }
+
+    .interior .section-title {
+        max-width: 400px;
+    }
+
+    .interior__bottbox {
+        position: relative;
+        height: auto;
+        padding: 15px 15px 20px;
+    }
+
+    .course-slide {
+        height: 250px;
+    }
+
+    .howwork__step .num {
+        font-size: 36px;
+    }
+
+    .howwork__step .num:after {
+        width: 8px;
+        height: 18px;
+    }
+
+    .faq {
+        padding-top: 50px;
+    }
+
+    .footer-wrapper {
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+
+    .footer__logo {
+        max-width: 20%;
+        flex: 0 0 20%;
+    }
+
+    .footer__lists,
+    .footer__btns {
+        max-width: 40%;
+        flex: 0 0 40%;
+    }
+
+    .footer__socbox {
+        max-width: 100%;
+        flex: 0 0 100%;
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+
+    .footer__socbox-wrapp {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__socbox .soclist {
+        margin: 0 40px 0 0;
+    }
+
+    .footer__socbox p:after {
+        top: -2px;
+    }
+
+    .footer-reserved p {
+        font-size: 12px;
+    }
+
+    .invest__descrtext p {
+        line-height: normal;
+    }
+
+    .interior .interior__bottbox p span {
+        font-size: 22px;
+    }
+
+    .whywe__sliderwrapp .swiper-pagination-current {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .whywe .section-subtitle,
+    .invest .section-subtitle,
+    .contacts .section-subtitle {
+        margin-bottom: 30px;
+    }
+
+    .gallery-section .title {
+        margin-bottom: 20px;
+    }
+
+    .whywe,
+    .youractive,
+    .course-construction,
+    .howwork,
+    .invest,
+    .genplan,
+    .getpresentation,
+    .objects {
+        padding: 50px 0;
+    }
+
+    .interior__bottsect {
+        padding-top: 50px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .mainsection video {
+        display: none;
+    }
+
+    .howwork__steps {
+        flex-wrap: wrap;
+    }
+
+    .mainsection .phonebg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        position: absolute;
+    }
+
+    .mainsection__btngroup {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .mainsection__btngroup a {
+        height: 56px;
+    }
+
+    .mainsection__btngroup a:first-child {
+        margin-bottom: 15px;
+    }
+
+    .mainsection__bottomsect .leftblock p:before {
+        top: 50%;
+    }
+
+    .youractive {
+        background-image: none;
+    }
+
+    .littform input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .littform button {
+        margin-top: 10px;
+    }
+
+    .invest__picwrap.left {
+        padding-right: 0;
+    }
+
+    .invest__picwrap.right {
+        padding-left: 0;
+    }
+
+    .invest__descrtext {
+        left: 15px;
+    }
+
+    .gallery_wrapper .circlebtnpic {
+        display: none;
+    }
+
+    .circlebtnpic {
+        display: none;
+    }
+
+    .gallery__mainpic a img.circlebtnpic-phone {
+        display: inline-block;
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        left: 15px;
+        bottom: 0;
+        background: rgb(7 6 6 / 50%);
+        border-radius: 50%;
+    }
+
+    .whywe__sectdescr {
+        padding: 0 !important;
+    }
+
+    .management-company {
+        background-position: center;
+    }
+
+    .filterbox,
+    ul.filterbox {
+        margin-top: 20px;
+    }
+
+    .howwork__step {
+        max-width: 50%;
+        flex: 50%;
+    }
+
+    .howwork__step {
+        margin-bottom: 20px;
+    }
+
+    .our-objects img {
+        max-width: 120px;
+        max-height: 65px;
+    }
+
+    .faq__block-title {
+        height: auto;
+        padding: 10px 10px 10px 0;
+    }
+
+    .map-wrapper {
+        height: 350px;
+    }
+
+    .map-wrapper iframe {
+        height: 350px;
+    }
+
+    .mapinfo-text {
+        position: relative;
+        height: auto;
+        max-width: 100%;
+        padding: 0 0 20px 0;
+    }
+
+    .contacts .section-title {
+        margin-bottom: 60px;
+    }
+
+    .invest h3 {
+        max-width: 100%;
+    }
+
+    .whywe__content,
+    .littform {
+        flex-wrap: wrap;
+    }
+
+    .whywe__sliderwrapp,
+    .whywe__sectdescr {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .whywe__sliderwrapp {
+        margin-bottom: 30px;
+    }
+
+    .whywe__sectdescr .toptext,
+    .whywe__sectdescr p i {
+        margin-bottom: 20px;
+    }
+
+    .whywe__content,
+    .invest__picwrap.left,
+    .invest__picwrap.right {
+        max-width: 540px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+
+
+}
+
+@media(max-width:575.8px) {
+    .our-objects {
+        flex-wrap: wrap;
+    }
+
+    .section-subtitle:before {
+        width: 10px;
+        height: 10px;
+    }
+
+    .mainsection__content {
+        padding: 44px 0 50px 0;
+    }
+
+    .mainsection__bottomsect .leftblock {
+        display: none;
+    }
+
+    .mainsection__middlesect h1 {
+        font-size: 46px;
+        margin-bottom: 14px;
+    }
+
+    .mainsection__middlesect h1 span {
+        font-size: 27px;
+        line-height: 130%;
+    }
+
+    .mainsection__btngroup a {
+        width: 100%;
+    }
+
+    .mainsection__middlesect {
+        margin-top: 0;
+    }
+
+    header.header {
+        height: 40px;
+    }
+
+    .mainsection {
+        padding-top: 40px;
+    }
+
+    .section-title::after {
+        bottom: -15px;
+    }
+
+    .section-title,
+    .youractive .section-title,
+    .invest h3,
+    .genplan h3,
+    .getpresentation .section-title,
+    .objects .section-title,
+    .faq .section-title,
+    .course-construction .section-title,
+    .contacts .section-title {
+        margin-bottom: 40px;
+    }
+
+    .whywe__sliderwrapp .swiper-container,
+    .whywe__sliderwrapp .slidebox {
+        height: 300px;
+    }
+
+    .whywe__sectdescr p {
+        line-height: 130%;
+    }
+
+    body {
+        font-size: 14px;
+        line-height: 130%;
+    }
+
+    .littform button {
+        margin: 10px auto 0;
+    }
+
+    .invest__picwrap,
+    .gallery__mainpic a {
+        height: 200px;
+    }
+
+    .invest__descrtext {
+        min-height: initial;
+    }
+
+    .invest .gallery-section {
+        padding-top: 30px;
+    }
+
+    .interior .interior__bottbox p span {
+        font-size: 18px;
+    }
+
+    .interior__bottbox {
+        padding: 8px 8px 14px 8px;
+    }
+
+    .filterbox button,
+    .filterbox a {
+        font-size: 14px;
+        padding: 4px 20px;
+        margin-right: 5px;
+    }
+
+    ul.filterbox li {
+        margin-right: 5px;
+    }
+
+    .filterbox,
+    ul.filterbox {
+        padding-right: 20px;
+    }
+
+    .course-slide {
+        height: 180px;
+    }
+
+    .course-sliderwrapp .swiper-button-next {
+        top: 20px;
+    }
+
+    .course-sliderwrapp .swiper-button-prev {
+        top: -10px;
+    }
+
+    .management-company {
+        padding: 50px 0;
+    }
+
+    .meneg__iconssection {
+        padding: 0;
+    }
+
+    .meneg__icbox img {
+        width: 50px;
+    }
+
+    .meneg__icbox {
+        width: 100%;
+        max-width: 50%;
+        flex: 0 0 50%;
+        padding: 0 10px;
+    }
+
+    .howwork .section-title {
+        margin-bottom: 60px;
+    }
+
+    .howwork__steps {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .howwork__step {
+        padding: 0;
+        max-width: 100%;
+        flex: 100%;
+    }
+
+    .howwork__step .num:after {
+        display: none;
+    }
+
+    .howwork__step .title {
+        margin-bottom: 10px;
+    }
+
+    .howwork__step .num {
+        font-size: 28px;
+        line-height: 1;
+    }
+
+    .howwork__step .moreless-btn {
+        margin-top: 10px;
+    }
+
+    .howwork__step:last-child {
+        margin-bottom: 0;
+    }
+
+    .our-objects>a {
+        width: 100%;
+        max-width: 50%;
+        flex: 0 0 50%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .objects {
+        padding-bottom: 30px;
+    }
+
+    .faq__block {
+        margin-bottom: 20px;
+    }
+
+    .mapinfo-text a:before,
+    .mapinfo-text p:before {
+        width: 16px;
+        height: 16px;
+    }
+
+    .mapinfo-text a,
+    .mapinfo-text p {
+        margin-bottom: 10px;
+        padding-left: 24px;
+    }
+
+    .mapinfo-text {
+        padding: 0;
+    }
+
+    .map-wrapper {
+        height: auto;
+    }
+
+    .footer-wrapper {
+        padding: 0 15px 40px 15px;
+    }
+
+    .footer__logo {
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .footer__lists,
+    .footer__btns,
+    .footer__lists ul {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .footer__lists {
+        text-align: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .footer__lists ul li:last-child {
+        margin-bottom: 10px;
+    }
+
+    .footer__btns a {
+        margin: 0 auto;
+    }
+
+    .footer__socbox-wrapp {
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__socbox .soclist {
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .footer__socbox .soclist {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-wrapper {
+        padding-bottom: 25px;
+    }
+
+    .footer-reserved p {
+        font-size: 10px;
+    }
+
+    .mobile-menu__content:after {
+        display: none;
+    }
+
+    .mobile-menu__close {
+        top: 15px;
+        left: 15px;
+    }
+
+    .mobile-menu__content img {
+        width: 112px;
+        margin-bottom: 44px;
+    }
+
+    .mobile-menu__content {
+        padding: 40px 20px 20px;
+    }
+
+    header.header {
+        padding: 0 15px;
+    }
+
+    .mobnav li a {
+        font-size: 16px;
+        letter-spacing: 0.06em;
+    }
+
+    .moblang {
+        margin: 60px 0 60px 0;
+    }
+
+    .moblang ul li a {
+        font-size: 16px;
+    }
+
+    .mobphonenums li a {
+        font-size: 16px;
+        background-size: 12px;
+        background-position: 0 4px;
+        padding-left: 20px;
+    }
+
+
+
+
+
+
+    .gallery-section .descr,
+    .interior .whywe__sectdescr .toptext {
+        margin-bottom: 30px;
+    }
+
+    .whywe .section-subtitle,
+    .invest .section-subtitle,
+    .contacts .section-subtitle,
+    .youractive ul {
+        margin-bottom: 20px;
+    }
+
+    .section-subtitle,
+    .mainsection__middlesect .subtitle,
+    .section-subtitle,
+    .mainsection__btngroup a,
+    .youractive ul li,
+    .littform input,
+    .faq__block-body p,
+    .howwork__step .moreless-btn {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
 }

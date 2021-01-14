@@ -55,6 +55,10 @@ $(document).ready(function () {
             prevEl: '.swiper-button-prev',
         },
         breakpoints: {
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 20
+              },
             767: {
               slidesPerView: 3,
               spaceBetween: 20
@@ -112,11 +116,16 @@ $(document).ready(function () {
 
 
     // якоря
-    $(".header_menu, .footer__lists").on("click", "a", function (event) {
+    $(".header_menu, .footer__lists, .mobnav").on("click", "a", function (event) {
         var headerHeight = 110;
-        if ($(window).width() < 1601) {
+        if ($(window).width() < 1601  && $(window).width() > 1024) {
             var headerHeight = 80;
+        } else if ($(window).width() < 1025 && $(window).width() > 575) {
+            var headerHeight = 60;
+        } else if ($(window).width() < 576) {
+            var headerHeight = 40;
         }
+        
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
@@ -127,9 +136,16 @@ $(document).ready(function () {
 
     $(".mainsection__btngroup a.transparentbtn, .footer__btns a.transparentbtn").on("click", function (event) {
         var headerHeight = 110;
-        if ($(window).width() < 1601) {
+        if ($(window).width() < 1601 && $(window).width() > 1024) {
             var headerHeight = 80;
+        } else if ($(window).width() < 1025 && $(window).width() > 575) {
+            var headerHeight = 60;
+        } else if ($(window).width() < 576) {
+            var headerHeight = 40;
         }
+
+        console.log(headerHeight)
+        
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
@@ -145,6 +161,18 @@ $(document).ready(function () {
         $(this).siblings('.phonesect').toggle();
     });
 
+    // mob menu
+    $('.burger-btn').click(function(){
+        $('.mobile-menu').slideDown();
+    });
+
+    $('.mobile-menu__close').click(function(){
+        $('.mobile-menu').slideUp();
+    });
+
+    $('.mobnav li a').click(function(){
+        $('.mobile-menu').slideUp();
+    });
 
 
 
