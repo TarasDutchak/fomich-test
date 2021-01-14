@@ -1178,6 +1178,10 @@
 }
 
 @media(max-width:575.8px) {
+    .mainsection__bottomsect .rightblock {
+        width: 100%;
+    }
+
     .our-objects {
         flex-wrap: wrap;
     }
