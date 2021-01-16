@@ -394,9 +394,11 @@ header.header {
     background: transparent;
     color: #D4AF37;
 }
+
 .yellowbtn svg path {
     transition: .3s;
 }
+
 .yellowbtn:hover svg path {
     fill: #D4AF37;
 }
@@ -1058,6 +1060,7 @@ ul.filterbox li:last-child {
     padding: 62px 0;
     background: url('../img/bgpic.png') no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .management-company .section-title {
@@ -1400,8 +1403,8 @@ ul.filterbox li:last-child {
 .map-wrapper iframe {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
+    /* object-fit: cover;
+    object-position: 50% 50%; */
 }
 
 
@@ -1594,6 +1597,243 @@ footer.footer {
     display: none;
 }
 
+
+/* modal */
+.modalwindow {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .7);
+    z-index: 99;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modalwindow.show {
+    display: flex;
+}
+
+.modalsect {
+    max-width: 1362px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.scrollmodal {
+    max-height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding: 40px 0;
+}
+
+.modalform-content {
+    padding: 78px 86px 77px 86px;
+    background-color: #1C1E23;
+    background-image: url('../img/modalbg.png');
+    background-repeat: no-repeat;
+    background-position: top 70px right -60px;
+}
+
+.modalform-content form {
+    max-width: 290px;
+}
+
+.modalform-content .title {
+    font-family: 'Allerta', sans-serif;
+    color: #fff;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 102px;
+    position: relative;
+}
+
+.modalform-content .title:after {
+    content: '';
+    display: inline-block;
+    width: 99px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -44px;
+}
+
+.modalform-content input {
+    height: 64px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    font-size: 22px;
+    outline: none;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.modalform-content input:focus {
+    border-color: #D4AF37;
+    color: #D4AF37;
+}
+
+.modalform-content button {
+    margin-top: 30px;
+    width: 255px;
+    height: 64px;
+    border: 1px solid #D4AF37;
+    cursor: pointer;
+}
+
+.modalpicbox {
+    width: 100%;
+    height: 100%;
+    background: url('../img/modalpic.png') no-repeat center center;
+    background-size: cover;
+
+}
+
+.closemodal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    top: 27px;
+    right: 27px;
+    width: 35px;
+    height: 35px;
+    z-index: 2;
+    border: none;
+    padding: 0;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.closemodal img {
+    width: 100%;
+    height: 100%;
+}
+
+.hiddscroll {
+    overflow: hidden;
+}
+
+.closemodal:hover {
+    opacity: .7;
+}
+
+
+/* TY */
+
+.tysect.mainsection:after {
+    display: none;
+}
+
+.tycontent {
+    padding: 120px 0 172px 0;
+}
+
+.tysect.mainsection {
+    height: auto;
+    min-height: calc(100vh - 294px);
+}
+
+.tycontent .title {
+    max-width: 291px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 130%;
+    color: #1C1E23;
+    letter-spacing: 0.05em;
+    font-family: 'Allerta', sans-serif;
+    margin-bottom: 35px;
+}
+
+.tycontent .title:after {
+    content: '';
+    display: inline-block;
+    width: 99px;
+    height: 1px;
+    background: #1C1E23;
+    position: absolute;
+    left: 0;
+    bottom: -44px;
+}
+
+.tycontent .descr,
+.tysoc {
+    max-width: 723px;
+    padding-left: 175px;
+    margin-bottom: 58px;
+}
+
+.tycontent .descr p {
+    font-size: 20px;
+    line-height: 150%;
+    color: #1C1E23;
+}
+
+.tycontent .descr p:last-child {
+    margin: 0;
+}
+
+.tysoc ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tysoc ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 117px;
+}
+
+.tysoc ul li:last-child {
+    margin-right: 0;
+}
+
+.tysoc ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #D4AF37;
+    padding-left: 36px;
+    position: relative;
+    transition: .3s;
+}
+
+.tysoc ul li a:hover {
+    opacity: .7;
+}
+
+.tysoc ul li a img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header.header.errorheader {
+    justify-content: space-between;
+}
+
+footer.footer.errorfooter {
+    padding: 0;
+}
+
+.errorcontent {
+    min-height: calc(100vh - 48px);
+    background: #1C1E23;
+    padding: 53px 0 0 0;
+}
 
 /* font-family: 'Allerta', sans-serif;
 font-family: 'Rubik', sans-serif; */

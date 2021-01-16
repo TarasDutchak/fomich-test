@@ -348,10 +348,58 @@
         min-height: 600px;
     }
 
+    .modalsect {
+        max-width: 900px;
+    }
 
+    .modalform-content .title {
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
 
+    .modalform-content .title:after {
+        bottom: -30px;
+    }
 
+    .modalform-content input  {
+        font-size: 16px;
+        height: 44px;
+    }
 
+    .modalform-content button {
+        height: 44px;
+        font-size: 16px;
+        width: 190px;
+        margin-top: 20px;
+    }
+
+    .modalform-content {
+        padding: 60px 70px;
+    }
+
+    .modalform-content {
+        background-size: 100%;
+    }
+
+    .closemodal {
+        width: 25px;
+        height: 25px;
+        top: 20px;
+        right: 20px;
+    }
+
+    .tycontent .title {
+        font-size: 36px;
+    }
+
+    .tycontent .descr p,
+    .tysoc ul li a {
+        font-size: 16px;
+    }
+
+    .tycontent {
+        padding: 120px 0 150px 0;
+    }
 
 
 
@@ -486,6 +534,9 @@
         padding-left: 30px;
     }
 
+    .tycontent {
+        padding: 100px 0;
+    }
 
 
 
@@ -504,6 +555,9 @@
 }
 
 @media(max-width:1024.8px) {
+    .management-company {
+        background-attachment: initial;
+    }
 
     .langsect,
     .phonesect__shown>img,
@@ -982,6 +1036,37 @@
         font-size: 32px;
     }
 
+    .modalsect {
+        max-width: 700px;
+    }
+
+    .modalform-content .title {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .modalform-content .title:after {
+        bottom: -20px;
+    }
+
+    .modalform-content {
+        padding: 40px;
+    }
+
+    .tycontent .title {
+        font-size: 24px;
+    }
+
+    .tycontent .descr, .tysoc {
+        padding-left: 90px;
+    }
+
+    .tycontent .title:after {
+        width: 60px;
+    }
+
+
+
     .whywe .section-subtitle,
     .invest .section-subtitle,
     .contacts .section-subtitle {
@@ -1172,7 +1257,29 @@
         padding-right: 15px;
     }
 
+    .modalpicbox {
+        display: none;
+    }
 
+    .modalsect {
+        max-width: 500px;
+    }
+
+    .closemodal {
+        width: 20px;
+        height: 20px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .modalform-content form {
+        max-width: 100%;
+    }
+
+    .modalform-content button {
+        display: block;
+        margin: 20px auto 0;
+    }
 
 
 }
@@ -1218,11 +1325,11 @@
     }
 
     header.header {
-        height: 40px;
+        height: 55px;
     }
 
     .mainsection {
-        padding-top: 40px;
+        padding-top: 55px;
     }
 
     .section-title::after {
@@ -1499,9 +1606,33 @@
     }
 
     .header__rightsect .phonesect {
-        top: 38px;
+        top: 55px;
     }
 
+    .modalform-content .title {
+        font-size: 18px;
+    }
+
+    .modalform-content input,
+    .modalform-content button {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .modalsect {
+        max-width: calc(100% - 30px);
+    }
+
+    .closemodal {
+        width: 15px;
+        height: 15px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .modalform-content {
+        padding: 40px 30px;
+    }
 
 
 
@@ -1530,5 +1661,33 @@
 
     .section-title {
         font-size: 22px;
+    }
+
+    .tycontent .title {
+        font-size: 22px;
+    }
+
+    .tycontent .title:after {
+        bottom: -20px;
+    }
+
+    .tycontent .descr, .tysoc {
+        padding-left: 0;
+    }
+
+    .tysoc ul li {
+        margin-right: 30px;
+    }
+
+    .tysoc ul li a {
+        padding-left: 28px;
+    }
+
+    .tycontent {
+        padding: 70px 0;
+    }
+
+    .tycontent .descr p, .tysoc ul li a {
+        font-size: 14px;
     }
 }

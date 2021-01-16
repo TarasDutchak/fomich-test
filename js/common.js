@@ -36,7 +36,7 @@ $(document).ready(function () {
     });
 
     // mask
-    $('#telnum, #telnum1').inputmask({
+    $('#telnum, #telnum1, #modaltel').inputmask({
         "mask": "99 /999/ 999-9999",
         showMaskOnHover: false,
         showMaskOnFocus: false,
@@ -123,7 +123,7 @@ $(document).ready(function () {
         } else if ($(window).width() < 1025 && $(window).width() > 575) {
             var headerHeight = 60;
         } else if ($(window).width() < 576) {
-            var headerHeight = 40;
+            var headerHeight = 55;
         }
         
         event.preventDefault();
@@ -141,7 +141,7 @@ $(document).ready(function () {
         } else if ($(window).width() < 1025 && $(window).width() > 575) {
             var headerHeight = 60;
         } else if ($(window).width() < 576) {
-            var headerHeight = 40;
+            var headerHeight = 55;
         }
 
         console.log(headerHeight)
@@ -174,6 +174,25 @@ $(document).ready(function () {
         $('.mobile-menu').slideUp();
     });
 
+
+    // modal
+    $('.modalbtn').click(function(e){
+        e.preventDefault()
+        $('.modalwindow').addClass('show');
+        $('body').addClass('hiddscroll');
+    });
+
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.modalsect').length && !$target.closest('.modalbtn').length) {
+            $('.modalwindow').removeClass('show');
+            $('body').removeClass('hiddscroll');
+        }
+      });
+    $('.closemodal').click(function(){
+        $('.modalwindow').removeClass('show');
+        $('body').removeClass('hiddscroll');
+    });
 
 
 });
