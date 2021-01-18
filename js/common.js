@@ -37,7 +37,7 @@ $(document).ready(function () {
 
     // mask
     $('#telnum, #telnum1, #modaltel').inputmask({
-        "mask": "99 /999/ 999-9999",
+        "mask": "+ 99 /999/ 999-9999",
         showMaskOnHover: false,
         showMaskOnFocus: false,
     });

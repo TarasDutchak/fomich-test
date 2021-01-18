@@ -401,6 +401,22 @@
         padding: 120px 0 150px 0;
     }
 
+    .errmainpic {
+        max-width: 470px;
+        margin-bottom: 50px;
+    }
+
+    .mainsection.errorcontent {
+        min-height: calc(100vh - 48px);
+    }
+
+    .errorcont .descr a {
+        font-size: 16px;
+    }
+
+    .errorcont .descr a {
+        padding: 12px 44px;
+    }
 
 
 
@@ -538,6 +554,13 @@
         padding: 100px 0;
     }
 
+    .errorcont {
+        padding-bottom: 100px;
+    }
+
+    .mainsection.errorcontent {
+        height: auto;
+    }
 
 
 
@@ -1281,6 +1304,13 @@
         margin: 20px auto 0;
     }
 
+    .errorcont .descr:after {
+        width: 50px;
+    }
+
+    .errorcont .descr {
+        padding-left: 100px;
+    }
 
 }
 
@@ -1690,4 +1720,21 @@
     .tycontent .descr p, .tysoc ul li a {
         font-size: 14px;
     }
+
+    .errorcont .descr {
+        padding-left: 0;
+    }
+
+    .errorcont .descr:after {
+        display: none;
+    }
+
+    .errorcont .descr {
+        text-align: center;
+    }
+
+    .errorcont .descr p {
+        margin-bottom: 30px;
+    }
+
 }
