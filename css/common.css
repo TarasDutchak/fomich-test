@@ -1888,11 +1888,49 @@ footer.footer.errorfooter {
 
 
 
+/* 25.02 */
+.appartamentssect {
+    padding: 80px 0;
+}
 
+.appartamentssect .section-title {
+    margin-bottom: 55px;
+}
 
+.appartamentssect .section-title b {
+    display: block;
+}
 
+.flatbox {
+    margin-top: 75px;
+    padding: 0 15px;
+}
 
+.appartamentssect .section-subtitle {
+    margin-bottom: 41px;
+}
 
+.flatbox a img {
+    width: 100%;
+}
+@media(max-width:991.8px) {
+    .appartamentssect {
+        padding: 50px 0;
+    }
+
+    .flatbox {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:576.8px) {
+    .appartamentssect .section-subtitle {
+        margin-bottom: 20px;
+    }
+    .appartamentssect {
+        padding-bottom: 10px;
+    }
+}
 
 
 
