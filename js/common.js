@@ -60,16 +60,16 @@ $(document).ready(function () {
             320: {
                 slidesPerView: 2,
                 spaceBetween: 20
-              },
+            },
             767: {
-              slidesPerView: 3,
-              spaceBetween: 20
+                slidesPerView: 3,
+                spaceBetween: 20
             },
             1024: {
                 spaceBetween: 30,
                 slidesPerView: 4,
             }
-          }
+        }
     });
 
     // more or less text (how we work)
@@ -118,16 +118,16 @@ $(document).ready(function () {
 
 
     // якоря
-    $(".header_menu a:not(.link), .footer__lists a, .mobnav a:not(.link)").click(function (event) {
+    $(".header:not(.no-scroll) .header_menu a:not(.link), .footer__lists:not(.no-scroll) a, .mobnav:not(.no-scroll) a:not(.link)").click(function (event) {
         var headerHeight = 110;
-        if ($(window).width() < 1601  && $(window).width() > 1024) {
+        if ($(window).width() < 1601 && $(window).width() > 1024) {
             var headerHeight = 80;
         } else if ($(window).width() < 1025 && $(window).width() > 575) {
             var headerHeight = 60;
         } else if ($(window).width() < 576) {
             var headerHeight = 55;
         }
-        
+
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
@@ -147,7 +147,7 @@ $(document).ready(function () {
         }
 
         console.log(headerHeight)
-        
+
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
@@ -159,36 +159,36 @@ $(document).ready(function () {
 
     // mob - phone btn
 
-    $('.phone-btn').click(function(){
+    $('.phone-btn').click(function () {
         $(this).siblings('.phonesect').toggle();
     });
 
     // mob menu
-    $('.burger-btn').click(function(){
+    $('.burger-btn').click(function () {
         $('.mobile-menu').slideDown();
     });
 
-    $('.mobile-menu__close').click(function(){
+    $('.mobile-menu__close').click(function () {
         $('.mobile-menu').slideUp();
     });
 
-    $('.mobnav li a').click(function(){
+    $('.mobnav li a').click(function () {
         $('.mobile-menu').slideUp();
     });
 
 
     // modal
-    $('.modalbtn').click(function(e){
+    $('.modalbtn').click(function (e) {
         e.preventDefault()
         $('.modalwindow').addClass('show');
         $('body').addClass('hiddscroll');
     });
-    $('.planning-popupbtn').click(function(e){
+    $('.planning-popupbtn').click(function (e) {
         e.preventDefault()
         $('.detpop').addClass('show');
         $('body').addClass('hiddscroll');
     });
-    
+
 
     $(document).click(function (event) {
         let $target = $(event.target);
@@ -196,11 +196,19 @@ $(document).ready(function () {
             $('.modalwindow, .detpop').removeClass('show');
             $('body').removeClass('hiddscroll');
         }
-      });
-    $('.closemodal').click(function(){
+    });
+    $('.closemodal').click(function () {
         $('.modalwindow, .detpop').removeClass('show');
         $('body').removeClass('hiddscroll');
     });
 
+    // scroll to top
+    $(function() {
+        $('#up').click(function() {
+            $('html, body').animate({scrollTop: 0},500);
+            return false;
+        })
+    
+    })
 
 });

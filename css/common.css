@@ -2213,3 +2213,17 @@ line-height: 150%;
 .detpop .modalpicbox {
     background: url('../img/poppic.jpg') no-repeat center center;
 }
+
+.totop-scroll {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #D4AF37;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3;
+}
