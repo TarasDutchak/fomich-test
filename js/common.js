@@ -19,15 +19,17 @@ $(document).ready(function () {
     var winWidth = $(window).width(),
         containerWidth = $('.container').width(),
         padd = (winWidth - containerWidth) / 2;
-    $('.whywe__sectdescr').css('padding-right', padd + 'px');
+    $('.whywe__sectdescr, .planning-variants__description').css('padding-right', padd + 'px');
     // хід буд - стрілки
     $('.course-sliderwrapp .swiper-button-next, .course-sliderwrapp .swiper-button-prev').css('right', padd + 'px');
+    $('.planning-variants  .whywe__content:nth-child(even) .planning-variants__description').css('padding-left', padd + 'px');
 
     $(window).resize(function () {
         var winWidth = $(window).width(),
             containerWidth = $('.container').width(),
             padd = (winWidth - containerWidth) / 2;
-        $('.whywe__sectdescr').css('padding-right', padd + 'px');
+        $('.whywe__sectdescr, .planning-variants__description').css('padding-right', padd + 'px');
+        $('.planning-variants  .whywe__content:nth-child(even) .planning-variants__description').css('padding-left', padd + 'px');
     });
 
     // fancybox
@@ -116,7 +118,7 @@ $(document).ready(function () {
 
 
     // якоря
-    $(".header_menu, .footer__lists, .mobnav").on("click", "a", function (event) {
+    $(".header_menu a:not(.link), .footer__lists a, .mobnav a:not(.link)").click(function (event) {
         var headerHeight = 110;
         if ($(window).width() < 1601  && $(window).width() > 1024) {
             var headerHeight = 80;
@@ -181,16 +183,22 @@ $(document).ready(function () {
         $('.modalwindow').addClass('show');
         $('body').addClass('hiddscroll');
     });
+    $('.planning-popupbtn').click(function(e){
+        e.preventDefault()
+        $('.detpop').addClass('show');
+        $('body').addClass('hiddscroll');
+    });
+    
 
     $(document).click(function (event) {
         let $target = $(event.target);
-        if (!$target.closest('.modalsect').length && !$target.closest('.modalbtn').length) {
-            $('.modalwindow').removeClass('show');
+        if (!$target.closest('.modalsect').length && !$target.closest('.modalbtn').length && !$target.closest('.planning-popupbtn').length) {
+            $('.modalwindow, .detpop').removeClass('show');
             $('body').removeClass('hiddscroll');
         }
       });
     $('.closemodal').click(function(){
-        $('.modalwindow').removeClass('show');
+        $('.modalwindow, .detpop').removeClass('show');
         $('body').removeClass('hiddscroll');
     });
 

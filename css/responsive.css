@@ -361,7 +361,7 @@
         bottom: -30px;
     }
 
-    .modalform-content input  {
+    .modalform-content input {
         font-size: 16px;
         height: 44px;
     }
@@ -479,6 +479,118 @@
         margin-bottom: 10px;
     }
 
+    .detplann-fscreen h1 {
+        font-size: 54px;
+    }
+
+    .detplann-fscreen {
+        margin-top: 80px;
+        padding: 85px 0 75px;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+
+    .detplann.appartamentssect .flatbox {
+        margin-top: 80px;
+    }
+
+    .planning-slidersect__slidertitle {
+        font-size: 32px;
+        margin-bottom: 45px;
+    }
+
+    .planning-variants__description .planning-popupbtn {
+        font-size: 18px;
+        width: 244px;
+        height: 54px;
+    }
+
+    .planning-variants__description .planning-popupbtn svg {
+        width: 8px;
+    }
+
+    .planning-variants__description .pv-descr {
+        margin-bottom: 55px;
+    }
+
+    .planning-variants .whywe__content {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+
+    .planning-variants .planning-slidersect .whywe__content:nth-child(even) {
+        padding-top: 70px;
+    }
+
+    .planning-variants .planning-slidersect .whywe__content:nth-child(even):after {
+        height: 80px;
+    }
+
+    .planning-variants .planning-slidersect .whywe__content:nth-child(even) .swiper-pagination.swiper-pagination-fraction {
+        left: 40px;
+    }
+
+    .planning-variants .planning-slidersect .whywe__content:nth-child(even) .swiper-button-next {
+        left: 185px;
+    }
+
+    .planning-variants .planning-slidersect .whywe__content:nth-child(even) .swiper-button-prev {
+        left: 145px;
+    }
+
+    .planning-variants__description .price {
+        margin-bottom: 15px;
+    }
+
+    .planning-slidersect__slidertitle {
+        margin-bottom: 25px;
+    }
+
+    .planning-variants__description .pv-descr {
+        margin-bottom: 25px;
+    }
+
+    .question-sect {
+        padding-bottom: 40px;
+    }
+
+    .question-sect p {
+        font-size: 16px;
+    }
+
+    .question-sect .planning-popupbtn {
+        font-size: 18px;
+        width: 300px;
+        height: 54px;
+    }
+
+    .question-sect .planning-popupbtn svg {
+        width: 8px;
+    }
+
+    .header__logo {
+        width: 100%;
+        max-width: 170px;
+        flex: 0 0 170px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     body {
         font-size: 16px;
@@ -496,7 +608,8 @@
         font-size: 16px;
     }
 
-    .mainsection__middlesect .subtitle {
+    .mainsection__middlesect .subtitle,
+    .detplann-fscreen-descr p {
         font-size: 18px;
     }
 
@@ -506,6 +619,27 @@
 
 }
 
+@media(max-width:1367.8px) {
+    .header__rightsect {
+        max-width: 300px;
+        flex: 0 0 300px;
+    }
+
+    .header_menu ul li {
+        margin-right: 20px;
+    }
+
+    .header_menu ul li a,
+    .header__rightsect .langsect ul li a,
+    .phonesect__shown a {
+        font-size: 15px;
+    }
+
+
+
+
+
+}
 
 @media(max-width:1300.8px) {
     .header__logo {
@@ -560,6 +694,50 @@
 
     .mainsection.errorcontent {
         height: auto;
+    }
+    .header_menu ul li a,
+    .header__rightsect .langsect ul li a,
+    .phonesect__shown a {
+        font-size: 16px;
+    }
+    .header_menu ul li a {
+        padding: 5px 0;
+        display: inline-block;
+    }
+
+    .detplann-fscreen h1 {
+        font-size: 42px;
+    }
+
+    .detplann-fscreen-descr p {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+    .appartamentssect .section-title {
+        margin-bottom: 35px;
+    }
+
+    .detplann.appartamentssect .flatbox {
+        margin-top: 50px;
+    }
+
+    .appartamentssect .section-subtitle {
+        margin-bottom: 20px;
+    }
+
+    .planning-variants .section-subtitle {
+        margin-bottom: 45px;
+    }
+
+    .planning-slidersect__slidertitle {
+        font-size: 28px;
+    }
+
+    .detpop .modalform-content .title {
+        font-size: 24px;
     }
 
 
@@ -1080,12 +1258,57 @@
         font-size: 24px;
     }
 
-    .tycontent .descr, .tysoc {
+    .tycontent .descr,
+    .tysoc {
         padding-left: 90px;
     }
 
     .tycontent .title:after {
         width: 60px;
+    }
+
+    .detplann-fscreen h1 {
+        font-size: 36px;
+    }
+
+    .detplann-fscreen {
+        margin-top: 60px;
+        padding: 65px 0 50px;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+
+    .appartamentssect .section-title {
+        margin-bottom: 55px;
+    }
+
+    .detplann.appartamentssect .flatbox {
+        margin-top: 30px;
+    }
+
+    .planning-slidersect__slidertitle {
+        font-size: 24px;
+    }
+
+    .planning-variants .planning-slidersect .whywe__content:nth-child(even):after {
+        height: 66px;
+    }
+
+    .planning-variants .planning-slidersect .whywe__content:nth-child(even) .swiper-pagination.swiper-pagination-fraction {
+        left: 25px;
+    }
+
+    .planning-variants .planning-slidersect .whywe__content:nth-child(even) .swiper-button-next {
+        left: 145px;
+    }
+
+    .planning-variants .planning-slidersect .whywe__content:nth-child(even) .swiper-button-next {
+        left: 110px;
+    }
+
+    .detpop .modalform-content .title {
+        font-size: 21px;
     }
 
 
@@ -1311,7 +1534,49 @@
     .errorcont .descr {
         padding-left: 100px;
     }
+    .detplann-fscreen img {
+        max-width: 200px;
+        margin: 0 auto 20px;
+        display: block;
+    }
 
+    .detplann-fscreen h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .detplann.appartamentssect {
+        padding: 0 0 20px 0;
+    }
+
+    .planning-variants__description {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0;
+    }
+
+    .planning-variants .planning-slidersect .whywe__content:nth-child(even):after {
+        display: none;
+    }
+
+    .planning-variants .planning-slidersect .whywe__content:nth-child(even),
+    .planning-variants .whywe__content {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .planning-variants .planning-slidersect .whywe__content:nth-child(even) .planning-variants__description {
+        padding: 0 !important;
+    }
+
+    .question-sect {
+        padding-bottom: 0;
+    }
 }
 
 @media(max-width:575.8px) {
@@ -1701,7 +1966,8 @@
         bottom: -20px;
     }
 
-    .tycontent .descr, .tysoc {
+    .tycontent .descr,
+    .tysoc {
         padding-left: 0;
     }
 
@@ -1717,7 +1983,8 @@
         padding: 70px 0;
     }
 
-    .tycontent .descr p, .tysoc ul li a {
+    .tycontent .descr p,
+    .tysoc ul li a {
         font-size: 14px;
     }
 
@@ -1736,5 +2003,40 @@
     .errorcont .descr p {
         margin-bottom: 30px;
     }
+
+    .detplann-fscreen h1 {
+        font-size: 22px;
+    }
+
+    .detplann-fscreen {
+        margin-top: 55px;
+        padding: 45px 0 50px;
+    }
+    .detplann-fscreen img {
+        max-width: 150px;
+    }
+
+    .detplann-fscreen-descr p {
+        font-size: 14px;
+    }
+    .appartamentssect .section-title {
+        margin-bottom: 45px;
+    }
+
+    .planning-variants {
+        padding-top: 30px;
+    }
+
+    .planning-slidersect__slidertitle {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .detpop .modalform-content button {
+        max-width: 100%;
+    }
+
+
+
+
 
 }

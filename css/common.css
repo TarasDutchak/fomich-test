@@ -1600,7 +1600,8 @@ footer.footer {
 
 
 /* modal */
-.modalwindow {
+.modalwindow,
+.detpop {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -1613,7 +1614,8 @@ footer.footer {
     display: none;
 }
 
-.modalwindow.show {
+.modalwindow.show,
+.detpop.show {
     display: flex;
 }
 
@@ -1850,14 +1852,14 @@ footer.footer.errorfooter {
     margin-bottom: 106px;
 }
 
-.errorcont  .descr {
+.errorcont .descr {
     max-width: 749px;
     padding-left: 175px;
     margin-bottom: 58px;
     position: relative;
 }
 
-.errorcont  .descr:after {
+.errorcont .descr:after {
     content: '';
     display: inline-block;
     width: 99px;
@@ -1913,6 +1915,7 @@ footer.footer.errorfooter {
 .flatbox a img {
     width: 100%;
 }
+
 @media(max-width:991.8px) {
     .appartamentssect {
         padding: 50px 0;
@@ -1927,6 +1930,7 @@ footer.footer.errorfooter {
     .appartamentssect .section-subtitle {
         margin-bottom: 20px;
     }
+
     .appartamentssect {
         padding-bottom: 10px;
     }
@@ -1936,3 +1940,276 @@ footer.footer.errorfooter {
 
 /* font-family: 'Allerta', sans-serif;
 font-family: 'Rubik', sans-serif; */
+
+
+
+
+
+/* DATAILS PLANNING */
+
+.detplann-fscreen {
+    margin-top: 110px;
+    padding: 120px 0 75px;
+}
+
+.detplann-fscreen h1 {
+    font-family: 'Allerta', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 130%;
+    margin: 0 0 55px 0;
+}
+
+.detplann-fscreen-descr p {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.detplann-fscreen-descr p:last-child {
+    margin-bottom: 0;
+}
+
+.detplann-fscreen img {
+    width: 100%;
+}
+
+.detplann.appartamentssect {
+    padding: 0 0 50px 0;
+}
+
+.detplann.appartamentssect p:last-child {
+    margin-bottom: 0;
+}
+
+.detplann.appartamentssect .flatbox {
+    margin-top: 120px;
+}
+
+.planning-variants {
+    padding: 50px 0;
+}
+
+.planning-variants .section-subtitle {
+    margin-bottom: 85px;
+}
+
+.planning-slidersect .whywe__sliderwrapp {
+    padding-top: 0;
+}
+
+.planning-variants__description {
+    padding-left: 30px;
+    width: 100%;
+    max-width: 57%;
+    flex: 0 0 57%;
+}
+
+.planning-variants__description .price {
+    font-weight: bold;
+    color: #1C1E23;
+    margin-bottom: 27px;
+}
+
+.planning-variants__description .price span {
+    color: #D4AF37;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.planning-variants__description .pv-descr {
+    margin-bottom: 75px;
+}
+
+.planning-variants__description .pv-descr p:last-child {
+    margin-bottom: 0;
+}
+
+.planning-variants__description .pv-itdescr i {
+    display: inline-block;
+    max-width: 434px;
+}
+
+.planning-variants__description .pv-itdescr {
+    margin-bottom: 32px;
+}
+
+.planning-variants__description .planning-popupbtn {
+    width: 318px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D4AF37;
+    border: 1px solid #D4AF37;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 26px;
+    transition: .3s;
+}
+
+.planning-variants__description .planning-popupbtn svg {
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 9px;
+}
+
+.planning-variants__description .planning-popupbtn:hover {
+    background-color: #fff;
+    color: #D4AF37;
+}
+
+.planning-variants__description .planning-popupbtn svg path {
+    transition: .3s;
+}
+
+.planning-variants__description .planning-popupbtn:hover svg path {
+    fill: #D4AF37;
+}
+
+.planning-variants .whywe__content {
+    padding-bottom: 148px;
+    flex-wrap: wrap;
+    padding-top: 148px;
+}
+
+.planning-variants .planning-slidersect .whywe__content:nth-child(even){
+    direction: rtl;
+    background: #ECEEF1;
+    padding-top: 98px;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.planning-variants .planning-slidersect .whywe__content:nth-child(even) .planning-variants__description {
+    padding-right: 15px !important;
+}
+
+.planning-variants .planning-slidersect .whywe__content:nth-child(even) * {
+    direction: ltr;
+}
+.planning-variants .planning-slidersect .whywe__content:first-child {
+    padding-top: 0;
+}
+.planning-slidersect__sliderhead {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+
+.planning-slidersect__slidertitle {
+    font-size: 40px;
+    line-height: 130%;
+    font-family: 'Allerta', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1C1E23;
+    margin-bottom: 75px;
+}
+
+.planning-slidersect__slidertitle span {
+    display: block;
+    color: #D4AF37;
+}
+
+.planning-variants .planning-slidersect .whywe__content:nth-child(even) .swiper-container:after  {
+    right: initial;
+    left: -1px;
+}
+
+.planning-variants .planning-slidersect .whywe__content:nth-child(even):after {
+    content: '';
+    background: #fff;
+    position: absolute;
+    display: inline-block;
+    height: 93px;
+    z-index: 2;
+    width: calc(58% + 10px);
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+
+.planning-variants .planning-slidersect .whywe__content:nth-child(even)  .swiper-pagination.swiper-pagination-fraction {
+    right: initial;
+    left: 71px;
+}
+
+.planning-variants .planning-slidersect .whywe__content:nth-child(even) .swiper-button-next {
+    right: initial;
+    left: 217px;
+}
+
+.planning-variants .planning-slidersect .whywe__content:nth-child(even) .swiper-button-prev {
+    right: initial;
+    left: 170px;
+}
+
+.question-sect {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 90px;
+}
+
+.question-sect p {
+    color: #1C1E23;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+
+.question-sect .planning-popupbtn {
+    width: 380px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 26px;
+    transition: .3s;
+    margin: 0 auto;
+}
+
+.question-sect .planning-popupbtn svg {
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 9px;
+}
+
+.question-sect .planning-popupbtn:hover {
+    color: #fff;
+    background-color: #D4AF37;
+}
+.question-sect .planning-popupbtn:hover svg path {
+    fill: #fff;
+}
+.question-sect .planning-popupbtn svg path {
+    transition: .3s;
+}
+
+.header_menu ul li a.active {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.detplann-fscreen h1 span {
+    display: block;
+}
+
+.detpop .modalform-content .title {
+    font-size: 26px;
+line-height: 150%;
+}
+
+.detpop .modalform-content button {
+    width: 290px;
+}
+
+.detpop .modalpicbox {
+    background: url('../img/poppic.jpg') no-repeat center center;
+}
