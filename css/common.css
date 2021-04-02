@@ -2426,7 +2426,12 @@ font-family: 'Rubik', sans-serif; */
 .tomain:hover {
     opacity: .7;
 }
-
+.callback .littform input:focus {
+    color: #D4AF37;
+}
+.callback .littform input {
+    color: #000;
+}
 
 
 
