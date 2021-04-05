@@ -209,6 +209,11 @@ $(document).ready(function () {
             return false;
         })
     
-    })
+    });
+
+    // Close  installments modal
+   $('.installments__close, .installments__btns .transparentbtn').click(function(){
+        $('.installments-modal').hide();
+   });
 
 });

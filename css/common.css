@@ -2323,6 +2323,7 @@ font-family: 'Rubik', sans-serif; */
     line-height: 150%;
     margin-bottom: 130px;
 }
+
 .akc-main .whywe__content {
     overflow: hidden;
 }
@@ -2346,11 +2347,12 @@ font-family: 'Rubik', sans-serif; */
     color: #1C1E23;
     padding-left: 25%;
 }
+
 .akc-main .bottabssect p span {
     font-size: 32px;
 }
 
-.akc-main  .whywe__sliderwrapp {
+.akc-main .whywe__sliderwrapp {
     display: flex;
     align-items: flex-end;
 }
@@ -2371,6 +2373,7 @@ font-family: 'Rubik', sans-serif; */
 .callback h3:after {
     bottom: -150px;
 }
+
 .callback__form-title {
     max-width: 715px;
     margin-bottom: 55px;
@@ -2426,25 +2429,110 @@ font-family: 'Rubik', sans-serif; */
 .tomain:hover {
     opacity: .7;
 }
+
 .callback .littform input:focus {
     color: #D4AF37;
 }
+
 .callback .littform input {
     color: #000;
 }
 
+/* Розтермінування попап */
 
+.installments-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(28, 30, 35, 0.96);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.installments-modal__wrap {
+    max-width: 794px;
+    max-height: 100%;
+    padding: 20px 0;
+}
 
+.installments-modal .title {
+    font-family: 'Allerta', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 38px;
+    line-height: 170%;
+    margin-bottom: 70px;
+    position: relative;
+    font-weight: normal;
+}
 
+.installments-modal .title:after  {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 150px;
+    height: 1px;
+    background: #fff;
+}
 
+.installments-modal .descr {
+    margin-bottom: 90px;
+}
 
+.installments-modal .descr p {
+    color: #FFFFFF;
+    line-height: 170%;
+}
 
+.installments-modal .descr p:last-child {
+    margin-bottom: 0;
+}
 
+.installments-modal img {
+    width: 100%;
+}
 
+.installments__btns {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
 
+.installments__btns a {
+    height: 64px;
+    display: block;
+    max-width: 49%;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D4AF37;
+}
 
-
+.installments__close {
+    position: absolute;
+    right: 80px;
+    top: 80px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.installments__close svg path {
+    transition: .3s;
+}
+.installments__close:hover svg path {
+    fill: #D4AF37;
+}
 
 
 /* font-family: 'Rubik', sans-serif;

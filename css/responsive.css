@@ -2204,3 +2204,183 @@
     }
 
 }
+
+
+
+/* 05.04 */
+
+@media(max-width:1600.8px) {
+    .installments__close {
+        width: 24px;
+        height: 24px;
+        top: 50px;
+        right: 50px;
+    }
+
+    .installments__close svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .installments-modal .yellowbtn span svg,  .installments-modal .transparentbtn span svg {
+        width: 16px;
+    }
+
+    .installments-modal .yellowbtn span, .installments-modal .transparentbtn span {
+        font-size: 18px;
+    }
+}
+@media(max-width:1024.8px) {
+    .installments-modal__wrap {
+        overflow: auto;
+    }
+}
+
+@media(max-width:991.8px) {
+    .installments__close {
+        top: 30px;
+        right: 30px;
+    }
+
+    .installments-modal__wrap {
+        max-width: 700px;
+    }
+
+    .installments-modal .title {
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .installments-modal .title {
+        font-size: 32px;
+        line-height: 150%;
+    }
+
+    .installments-modal .yellowbtn span, .installments-modal .transparentbtn span {
+        padding-left: 25px;
+        font-size: 18px;
+    }
+
+    .installments-modal .title:after {
+        bottom: -20px;
+    }
+
+    .installments-modal .descr {
+        margin-bottom: 40px;
+    }
+
+    .installments__btns {
+        margin-top: 50px;
+    }
+
+
+}
+
+@media(max-width:767.8px) {
+    .installments-modal__wrap {
+        max-width: 100%;
+        padding: 50px 30px;
+    }
+
+    .installments__close {
+        top: 20px;
+        right: 20px;
+    }
+
+    .installments-modal .title {
+        font-size: 28px;
+    }
+
+    .installments__btns a {
+        height: 50px;
+    }
+
+
+
+}
+@media(max-width:575.8px) {
+    .installments-modal .title {
+        font-size: 21px;
+    }
+
+    .installments__btns a {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .installments__btns {
+        flex-wrap: wrap;
+    }
+
+    .installments-modal .yellowbtn span svg, .installments-modal .transparentbtn span svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .installments-modal .yellowbtn span, .installments-modal .transparentbtn span {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+
+
+}
+
+@media(max-height:800px) and (min-width:1025px) {
+    .installments-modal .title {
+        margin-top: 0;
+        font-size: 36px;
+        line-height: 150%;
+        margin-bottom: 50px;
+    }
+
+    .installments-modal .title:after {
+        bottom: -20px;
+    }
+
+    .installments-modal .descr {
+        margin-bottom: 50px;
+    }
+
+    .installments__btns {
+        margin-top: 50px;
+    }
+
+}
+
+@media(max-height:650px) and (min-width:1025px) {
+    .installments-modal .title {
+        font-size: 32px;
+    }
+
+    .installments-modal .descr {
+        margin-bottom: 30px;
+    }
+
+    .installments__btns a {
+        height: 56px;
+        font-size: 18px;
+    }
+
+
+}
+
+@media(max-height:600px) and (min-width:1025px) {
+    .installments-modal .title {
+        font-size: 24px;
+    }
+
+    .installments-modal .descr {
+        margin-bottom: 20px;
+    }
+
+    .installments__btns {
+        margin-top: 20px;
+    }
+
+    .installments__close {
+        top: 20px;
+        right: 20px;
+    }
+}
